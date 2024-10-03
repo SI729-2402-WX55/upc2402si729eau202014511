@@ -1,0 +1,33 @@
+{
+  "home": {
+    "title": "Inicio",
+    "content": "Bienvenido a \nEventify"
+  },
+  "page_not_found": {
+    "title": "404 - Página no encontrada",
+    "message_firstPart": "La URL solicitada",
+    "message_secondPart": "no se encontró en este servidor.",
+    "button": "Volver a Inicio"
+  },
+  "toolbar": {
+    "home": "Inicio",
+    "rating": "Calificación"
+  },
+  "event": {
+    "event_id": "ID de Evento",
+    "title": "Eventos Registrados",
+    "name": "Nombre del Evento",
+    "description": "Descripción",
+    "scheduledAt": "Programado en",
+    "checkInAttendees": "Registrados",
+    "averageRating": "Calificación Promedio",
+    "checkIn": "Registrarse"
+  },
+  "rating": {
+    "title": "Calificación de Evento",
+    "ticketIdentifier": "Identificador de Boleto",
+    "rating": "Calificación",
+    "rateEvent": "Calificar Evento",
+    "cancel": "Cancelar"
+  }
+}

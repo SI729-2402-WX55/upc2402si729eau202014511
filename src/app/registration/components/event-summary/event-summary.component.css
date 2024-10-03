@@ -1,0 +1,23 @@
+.event-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+mat-card-header {
+  margin: 0 !important;
+}
+
+.example-card {
+  max-width: 25rem;
+  margin: 0 !important;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}

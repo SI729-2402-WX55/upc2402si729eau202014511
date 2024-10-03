@@ -1,0 +1,26 @@
+<section class="add-rating">
+  <form [formGroup]="ratingForm" (ngSubmit)="rate()">
+    <mat-form-field>
+      <mat-label>{{ 'rating.ticketIdentifier' | translate }}</mat-label>
+      <input matInput formControlName="ticketIdentifier" required aria-label="Ticket Identifier">
+      <mat-error *ngIf="ratingForm.get('ticketIdentifier')?.hasError('required')">
+        Ticket Identifier is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ 'rating.rating' | translate }}</mat-label>
+      <input matInput type="number" min="1" max="5" formControlName="rating" required aria-label="Rating">
+      <mat-error *ngIf="ratingForm.get('rating')?.hasError('required')">
+        Rating is required
+      </mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+      <button mat-flat-button type="submit" [disabled]="!ratingForm.valid" aria-label="Rate Event">{{ 'rating.rateEvent' | translate }}</button>
+      <button mat-flat-button color="warn" type="button" (click)="cancel()" aria-label="Cancel">{{ 'rating.cancel' | translate }}</button>
+    </div>
+  </form>
+
+  <p *ngIf="checkInMessage">{{ checkInMessage }}</p>
+</section>

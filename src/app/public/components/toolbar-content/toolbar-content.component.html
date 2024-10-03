@@ -1,0 +1,15 @@
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row class="toolbar__row">
+    <div class="toolbar__start">
+      <img src="https://img.logo.dev/eventify.io?token=pk_GN_x4FDeQqa5s0UD0T1nCg" alt="Logo" class="toolbar__logo" aria-label="Eventify Logo">
+      <span aria-label="ISO Certification">ISO 27001:2022 certified</span>
+    </div>
+    <div class="toolbar__center">
+      <button mat-button routerLink="home" aria-label="Home">{{ 'toolbar.home' | translate }}</button>
+      <button mat-button routerLink="engagement/ratings/new" aria-label="Check In">{{ 'toolbar.rating' | translate }}</button>
+    </div>
+    <div class="toolbar__end">
+      <app-language-switcher aria-label="Language Switcher"/>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

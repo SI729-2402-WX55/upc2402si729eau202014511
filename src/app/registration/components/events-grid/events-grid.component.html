@@ -1,0 +1,8 @@
+<section class="events-grid">
+  <span class="title" aria-label="Event Title">{{ 'event.title' | translate }}</span>
+  <mat-nav-list class="events-list" aria-label="Events List">
+    @for (event of events; track event.id) {
+      <app-event-summary [event]="event" aria-label="Event Summary"/>
+    }
+  </mat-nav-list>
+</section>

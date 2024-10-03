@@ -1,0 +1,21 @@
+<section class="event-summary">
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title aria-label="Event Name">{{ 'event.name' | translate }}: {{ event.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p aria-label="Event Description">{{ 'event.description' | translate }}: {{event.description}}</p>
+    <p aria-label="Event Scheduled At">{{ 'event.scheduledAt' | translate }}: {{event.scheduledAt}}</p>
+  </mat-card-content>
+  <mat-card-footer class="example-card-footer">
+    <p aria-label="Event Check-In Attendees">{{ 'event.checkInAttendees' | translate }}: {{ event.checkInAttendees }}</p>
+    <p aria-label="Event Average Rating">
+      {{ 'event.averageRating' | translate }}:
+      <span *ngIf="averageRating !== 0 && averageRating > 0; else noRatings">
+        {{ event.averageRating | number: '1.1-1' }}
+      </span>
+      <ng-template #noRatings>No Ratings</ng-template>
+    </p>
+  </mat-card-footer>
+</mat-card>
+</section>

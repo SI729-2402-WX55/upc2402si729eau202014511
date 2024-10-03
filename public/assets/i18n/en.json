@@ -1,0 +1,33 @@
+{
+  "home": {
+    "title": "Home",
+    "content": "Welcome to \nEventify"
+  },
+  "page_not_found": {
+    "title": "404 - Page Not Found",
+    "message_firstPart": "The requested URL",
+    "message_secondPart": "was not found on this server.",
+    "button": "Return to Home"
+  },
+  "toolbar": {
+    "home": "Home",
+    "rating": "Rating"
+  },
+  "event": {
+    "event_id": "Event ID",
+    "title": "Registered Events",
+    "name": "Event Name",
+    "description": "Description",
+    "scheduledAt": "Scheduled At",
+    "checkInAttendees": "Check In Attendees",
+    "averageRating": "Average Rating",
+    "checkIn": "Check In"
+  },
+  "rating": {
+    "title": "Event Rating",
+    "ticketIdentifier": "Ticket Identifier",
+    "rating": "Rating",
+    "rateEvent": "Rate Event",
+    "cancel": "Cancel"
+  }
+}

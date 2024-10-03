@@ -1,0 +1,23 @@
+.toolbar {
+  background-color: deepskyblue;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar__start {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar__logo {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 10px;
+}
